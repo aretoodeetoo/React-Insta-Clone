@@ -1,17 +1,18 @@
 import React from 'react';
 import './SearchBar.css';
-
-import SearchInput from './SearchInput';
+import instagramLogo from '/Users/Don/Git/React-Insta-Clone/instagram/src/components/SearchBar/instagramLogo.png';
 
 const SearchBar = props => {
     return (
         <div className="SearchBar">
         <div className="logo">
-        <i class="fas fa-camera"></i>
-        <span> | Instagram</span>
+        <i class="fas fa-camera">|</i>
+        <img className="instagramLogo" src={instagramLogo} alt="instagram" />
         </div>
         <div className="SearchInput">
-        <SearchInput />
+        <input 
+        type="text"
+        placeholder="Search..."/>
         </div>
         <div className="user-icons">
         <i class="far fa-compass"></i>
