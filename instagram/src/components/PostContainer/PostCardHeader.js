@@ -5,7 +5,9 @@ const PostCardHeader = props => {
     return (
         <div className="postHeader">
         <div className="thumbnail">
-        <img alt="Thumbnail" 
+        <img 
+        className="thumbnailImage"
+        alt="Thumbnail" 
         src={props.thumbnailUrl} />
         </div>
         <div className="user">

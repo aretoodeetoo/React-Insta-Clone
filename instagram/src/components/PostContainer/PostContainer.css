@@ -2,3 +2,25 @@
     margin: 0 auto;
     width: 50%;
 }
+
+.postCard{
+    margin: 0 auto;
+}
+
+.postHeader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 2%;
+}
+
+.user{
+   margin-top: 10%;
+   margin-left: 12%;
+}
+
+.thumbnailImage{
+    max-height: 62px; 
+    max-width: 200px;
+    border-radius: 50%;
+}
