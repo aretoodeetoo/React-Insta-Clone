@@ -1,15 +1,20 @@
 import React from 'react';
 import './CommentSection.css';
 
-const CommentSection = () => {
-    return(
-        <div className="comments">
-        <input 
-        type="text"
-        placeholder="Add a comment"
-        />
-        </div>
-    );
+class CommentSection extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            comments: props.comments
+        }
+    }
+
+    render(){
+        return(
+            <div className="commentSection">
+            </div>
+        );
+    }
 }
 
 export default CommentSection;
