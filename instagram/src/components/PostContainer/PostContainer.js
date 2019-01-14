@@ -1,17 +1,15 @@
 import React from 'react';
 import './PostContainer.css';
+import PostCard from '/Users/Don/Git/React-Insta-Clone/instagram/src/components/PostContainer/PostCard.js';
 
-import { Card, CardText, CardBody } from 'reactstrap';
-
-const PostContainer = () => {
+const PostContainer = props => {
     return(
-        <div className="PostContainer">
-        <Card>
-          <CardBody>
-              <img alt="User visual data"/>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          </CardBody>
-        </Card>
+      <div className="PostContainer">
+      {props.posts.map(po => 
+      <PostCard
+      key={po.imageUrl}
+      post={po} />
+      )}
       </div>
     );
 }

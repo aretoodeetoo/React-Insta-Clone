@@ -21,7 +21,9 @@ class App extends Component {
         <header className="App-header">
         </header>
         <SearchBar />
-        <PostContainer />
+        <PostContainer 
+        posts={this.state.posts}
+        />
         <CommentSection />
       </div>
     );
