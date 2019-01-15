@@ -12,6 +12,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     margin-bottom: 2%;
+    margin-top: 3%;
 }
 
 .user{
@@ -23,4 +24,18 @@
     max-height: 62px; 
     max-width: 200px;
     border-radius: 50%;
+}
+
+.commentIcons{
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.fa-heart{
+    margin-right: 3%;
+    font-size: 24px;
+}
+
+.fa-comment{
+    font-size: 24px;
 }

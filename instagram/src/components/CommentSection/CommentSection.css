@@ -3,3 +3,16 @@
     margin: 0 auto;
     justify-content: center;
 }
+
+input{
+    width: 100%;
+}
+
+.commentInput{
+    margin-top: 1%;
+}
+
+.commentUsername{
+    font-weight: bold;
+    margin-right: .5%;
+}
