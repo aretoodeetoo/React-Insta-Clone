@@ -6,7 +6,7 @@ const SearchBar = props => {
     return (
         <div className="SearchBar">
         <div className="logo">
-        <i class="fas fa-camera"></i>
+        <i className="fas fa-camera"></i>
         <span>|</span>
         <img className="instagramLogo" src={instagramLogo} alt="instagram" />
         </div>
@@ -19,9 +19,9 @@ const SearchBar = props => {
         </form>
         </div>
         <div className="user-icons">
-        <i class="far fa-compass"></i>
-        <i class="far fa-heart"></i>
-        <i class="far fa-user"></i>
+        <i className="far fa-compass"></i>
+        <i className="far fa-heart"></i>
+        <i className="far fa-user"></i>
         </div>
         </div>
     );

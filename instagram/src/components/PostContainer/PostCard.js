@@ -16,8 +16,8 @@ const PostCard = props => {
         <div className="mainPost">
         <img alt="User Post" src={props.post.imageUrl}/>
         <div className="commentIcons">
-        <i class="far fa-heart"></i>
-        <i class="far fa-comment"></i>
+        <i className="far fa-heart"></i>
+        <i className="far fa-comment"></i>
         </div>
         </div>
 
