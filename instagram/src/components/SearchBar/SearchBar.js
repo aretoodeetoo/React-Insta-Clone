@@ -11,9 +11,12 @@ const SearchBar = props => {
         <img className="instagramLogo" src={instagramLogo} alt="instagram" />
         </div>
         <div className="SearchInput">
+        <form>
         <input 
+        className="commentForm"
         type="text"
         placeholder="Search"/>
+        </form>
         </div>
         <div className="user-icons">
         <i class="far fa-compass"></i>

@@ -4,12 +4,21 @@
     justify-content: center;
 }
 
-input{
+form{
     width: 100%;
 }
 
 .commentInput{
     margin-top: 1%;
+}
+
+.commentForm{
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    text-align: left;
 }
 
 .commentUsername{
