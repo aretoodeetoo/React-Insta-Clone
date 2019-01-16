@@ -34,13 +34,6 @@ class CommentSection extends React.Component{
         });
       };
 
-    //   increaseLikes = () => {
-    //       console.log(this.state.likes);
-    //     this.setState({
-    //       likes: ++this.state.likes
-    //     }
-    //     )}
-
     increaseLikes = () => {
         this.setState((prevState, props) => {
             return {
@@ -48,7 +41,6 @@ class CommentSection extends React.Component{
             }
         })
     }
-
 
     render(){
         return(
