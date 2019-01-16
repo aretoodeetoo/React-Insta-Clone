@@ -8,7 +8,7 @@ const CommentInput = props => {
         onChange={props.handleChanges}
         value={props.newCommentText}
         type="text"
-        name="newCommentText"
+        name="comment"
         placeholder="Add a comment..."/>
         </form>
          </div>

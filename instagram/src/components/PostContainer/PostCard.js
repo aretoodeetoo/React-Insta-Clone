@@ -15,18 +15,12 @@ const PostCard = props => {
 
         <div className="mainPost">
         <img alt="User Post" src={props.post.imageUrl}/>
-        <div className="commentIcons">
-        <i className="far fa-heart"></i>
-        <i className="far fa-comment"></i>
-        </div>
-        <div>
-            {props.post.likes} likes
-        </div>
         </div>
 
         <div className="commentSection">
         <CommentSection 
         comments={props.post.comments}
+        likes={props.post.likes}
         />
         </div>
         </div>

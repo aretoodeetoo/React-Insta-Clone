@@ -11,7 +11,8 @@ class CommentSection extends React.Component{
         super(props);
         this.state = {
             comments: props.comments,
-            comment: ''
+            comment: '',
+            likes: props.likes
         };
     }
 
@@ -33,9 +34,29 @@ class CommentSection extends React.Component{
         });
       };
 
+      increaseLikes = () => {
+          console.log(this.state.likes);
+        this.setState({
+          likes: ++this.state.likes
+        }
+        )}
+
 
     render(){
         return(
+            <div>
+            <div>
+            <div className="commentIcons">
+            <i 
+            onClick={this.increaseLikes}
+            className="far fa-heart"></i>
+            <i
+            className="far fa-comment"></i>
+            </div> 
+            <div>
+            {this.state.likes} likes
+        </div>
+            </div>
             <div className="commentSection">
             {this.state.comments.map((com, idx) => 
                 <Comment
@@ -46,6 +67,7 @@ class CommentSection extends React.Component{
             handleChanges={this.handleChanges}
             addNewComment={this.addNewComment}
              />
+            </div>
             </div>
         );
     }

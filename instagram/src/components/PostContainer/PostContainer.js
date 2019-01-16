@@ -9,7 +9,9 @@ const PostContainer = props => {
       {props.posts.map(post => 
       <PostCard
       key={post.imageUrl}
-      post={post} />
+      post={post}
+      increaseLikes={props.increaseLikes}
+      likes={props.likes} />
       )}
       </div>
     );

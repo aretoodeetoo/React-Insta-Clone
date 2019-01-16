@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      posts: []
+      posts: [],
     }
   }
 
@@ -25,6 +25,8 @@ class App extends Component {
         <SearchBar />
         <PostContainer 
         posts={this.state.posts}
+        increaseLikes={this.increaseLikes}
+        likes={this.state.likes}
         />
       </div>
     );
