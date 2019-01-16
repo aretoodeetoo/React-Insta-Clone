@@ -4,41 +4,65 @@ import './Login.css';
 class Login extends React.Component{
     constructor(props){
         super(props);
+        this.state = {
+            username: '',
+            password: ''
+        }
     }
+
+    handleChanges = ev => {
+        this.setState({ [ev.target.name]: ev.target.value });
+    }
+
 
     render(){
         return (
-        <div  className="loginPage">
-            <div>
+        <div className="loginPage">
+            <div className="pageWrapper">
+                <div className="loginTitle">
             <h2>Welcome to InstaCram!</h2>
-            <h3>Social Media for Students Who Actually Want to Study</h3>
-            <form action="/action_page.php">
-            <div>
-                <h2>Log In With Existing Accounts or With InstaCram</h2>
+            <h4>Social Media for Students Who Actually Want to Study</h4>
             </div>
+            <form action="/action_page.php">
+            <div className="loginSubtitle">
+                <h5>Log In With Existing Accounts or With InstaCram</h5>
+            </div>
+            <div className="loginWrapper">
             <div className="socialMedias">
             <a href="#">
-            <i class="fas fa-graduation-cap"></i> Log In With School Account
+            <i class="fas fa-graduation-cap"></i><span className="loginAlternates"> Log In With School Account</span>
             </a>
             <a href="#">
-            <i class="fa fa-facebook fa-fw"></i> Log In With Facebook
+            <i class="fab fa-facebook"></i><span className="loginAlternates"> Log In With Facebook </span>
             </a>
             <a href="#">
-            <i class="fa fa-google fa-fw"></i> Log In With Google Account
+            <i class="fab fa-google"></i><span className="loginAlternates"> Log In With Google Account </span>
             </a>
             </div>
             <div className="loginInput">
-                <input type="text" name="username" placeholder="Username"/>
-                <input type="password" name="password" placeholder="Password" />
-                <input type="submit" name="submitButton" placeholder="Log In" />
+                <input 
+                type="text" 
+                onSubmit={this.addNewUser}
+                onChange={this.handleChanges}
+                value={this.state.username}
+                name="username" 
+                placeholder="Username"/>
+                <input 
+                onChange={this.handleChanges}
+                value={this.state.password}
+                type="password" 
+                name="password" 
+                placeholder="Password" />
+                <button className="loginSubmit">Log In</button>
+            </div>
             </div>
             </form>
             </div>
 
             <div className="loginBottom">
             <div className="alternateForms">
-            <button className="accountCreate">Create Account</button>
             <button className="forgotPass">Forgot Password?</button>
+            <button className="accountCreate">Create Account</button>
             </div>
             </div>
         </div>

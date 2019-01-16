@@ -3,6 +3,8 @@ import './App.css';
 
 // Import App body
 import PostsPage from '/Users/Don/Git/React-Insta-Clone/instagram/src/components/PostContainer/PostsPage.js';
+import authenticate from './components/Authenticate/Authenticate';
+import Login from './components/Login/Login';
 
 // Import HOC
 // import authenticate from '/Users/Don/Git/React-Insta-Clone/instagram/src/components/Authenticate/Authenticate.js';
@@ -17,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <PostsPage />
+      <Login />
       </div>
     );
   }

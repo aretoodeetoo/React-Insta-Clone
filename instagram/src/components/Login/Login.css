@@ -1,0 +1,61 @@
+.loginPage{
+    margin: 0 auto;
+    text-align: center;
+    background-image: url('./mike-tinnion-327565-unsplash.jpg');
+    max-width: 880px;
+    height: 900px;
+    color: white;
+}
+
+.loginTitle{
+    margin-bottom: 5%;
+}
+
+.loginWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.socialMedias{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-content: space-between;
+}
+
+.fas{
+    text-decoration: none;
+    color: white;
+}
+
+.fab{
+    text-decoration: none;
+    color: white;
+}
+
+.loginAlternates{
+    text-decoration: none;
+    color: white;
+}
+
+.loginInput{
+    width: 30%;
+    border-radius: 5%;
+}
+
+.loginSubmit{
+    margin-top: 5%;
+    text-align: center;
+    background-color: #1191F3;
+    color: black;
+    width: 100%;
+    border-radius: 3%;
+}
+
+.alternateForms{
+    display: flex;
+    justify-content: space-evenly;
+}
