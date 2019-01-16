@@ -11,18 +11,48 @@ class App extends Component {
     super(props);
     this.state = {
       posts: [],
+      searchInput: ''
     }
   }
 
   componentDidMount() {
     console.log('Component mounted');
-    this.setState({ posts: dummyData });
+    this.setState({ posts: dummyData,
+    usernames: dummyData.username });
   }
+
+  filterNames = e => {
+    console.log(this.state.searchInput)
+    e.preventDefault();
+    let newArray = []
+    let newPosts = this.state.posts.map(post => {
+      if (post.username.includes(this.state.searchInput)){
+        newArray.push(post);
+      }
+    })
+    console.log(newArray);
+    this.setState({
+      posts: newArray
+    });
+    // if (newPosts.length === 0){
+    //   return;
+    // } else {
+    // this.setState({posts: newPosts, searchInput: ''})
+    // }
+  }
+
+  handleChanges = ev => {
+    this.setState({ [ev.target.name]: ev.target.value });
+}
 
   render() {
     return (
       <div className="App">
-        <SearchBar />
+        <SearchBar 
+        searchInput={this.state.searchInput}
+        handleChanges={this.handleChanges}
+        filterNames={this.filterNames}
+        />
         <PostContainer 
         posts={this.state.posts}
         increaseLikes={this.increaseLikes}
