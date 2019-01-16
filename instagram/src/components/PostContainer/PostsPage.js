@@ -23,7 +23,7 @@ class PostsPage extends React.Component{
         console.log(this.state.searchInput)
         e.preventDefault();
         let newArray = []
-        //eslint-disable-next-line
+        // eslint-disable-next-line
         let newPosts = this.state.posts.map(post => {
           if (post.username.includes(this.state.searchInput)){
             newArray.push(post);

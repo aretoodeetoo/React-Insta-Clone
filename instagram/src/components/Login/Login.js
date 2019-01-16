@@ -14,6 +14,10 @@ class Login extends React.Component{
         this.setState({ [ev.target.name]: ev.target.value });
     }
 
+    onLogin = ev => {
+        localStorage.setItem('username', this.state.username);
+        localStorage.setItem('password', this.state.password);
+    }
 
     render(){
         return (
@@ -30,13 +34,13 @@ class Login extends React.Component{
             <div className="loginWrapper">
             <div className="socialMedias">
             <a href="#">
-            <i class="fas fa-graduation-cap"></i><span className="loginAlternates"> Log In With School Account</span>
+            <i className="fas fa-graduation-cap"></i><span className="loginAlternates"> Log In With School Account</span>
             </a>
             <a href="#">
-            <i class="fab fa-facebook"></i><span className="loginAlternates"> Log In With Facebook </span>
+            <i className="fab fa-facebook"></i><span className="loginAlternates"> Log In With Facebook </span>
             </a>
             <a href="#">
-            <i class="fab fa-google"></i><span className="loginAlternates"> Log In With Google Account </span>
+            <i className="fab fa-google"></i><span className="loginAlternates"> Log In With Google Account </span>
             </a>
             </div>
             <div className="loginInput">
@@ -53,13 +57,16 @@ class Login extends React.Component{
                 type="password" 
                 name="password" 
                 placeholder="Password" />
-                <button className="loginSubmit">Log In</button>
+                <button 
+                onClick={this.onLogin}
+                className="loginSubmit">Log In</button>
             </div>
             </div>
             </form>
             </div>
 
             <div className="loginBottom">
+            <h5>Having trouble logging in?</h5>
             <div className="alternateForms">
             <button className="forgotPass">Forgot Password?</button>
             <button className="accountCreate">Create Account</button>

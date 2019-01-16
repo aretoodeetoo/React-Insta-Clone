@@ -10,8 +10,14 @@ class extends React.Component{
             loggedIn: false
         }
     }
+
+    componentDidMount(){
+        localStorage.getItem('username');
+        localStorage.getItem('password');
+    }    
+
     render(){
-        // if (loggedIn === true)
+        // if (!loggedIn)
        return <App />
        // else
        return <Login />
