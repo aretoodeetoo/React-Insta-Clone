@@ -34,11 +34,6 @@ class App extends Component {
     this.setState({
       posts: newArray
     });
-    // if (newPosts.length === 0){
-    //   return;
-    // } else {
-    // this.setState({posts: newPosts, searchInput: ''})
-    // }
   }
 
   handleChanges = ev => {
