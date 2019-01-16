@@ -41,16 +41,16 @@ class PostsPage extends React.Component{
     render(){
         return(
             <div className="postsPage">
-                    <SearchBar 
-        searchInput={this.state.searchInput}
-        handleChanges={this.handleChanges}
-        filterNames={this.filterNames}
-        />
-        <PostContainer 
-        posts={this.state.posts}
-        increaseLikes={this.increaseLikes}
-        likes={this.state.likes}
-        />
+            <SearchBar 
+                searchInput={this.state.searchInput}
+                handleChanges={this.handleChanges}
+                filterNames={this.filterNames}
+            />
+            <PostContainer 
+                posts={this.state.posts}
+                increaseLikes={this.increaseLikes}
+                likes={this.state.likes}
+            />
             </div>
         );
     }

@@ -1,8 +1,12 @@
 import React from 'react';
+import App from '../../App';
 
-class Authenticate extends React.Component{
-    constructor(props);{
-        super(props);
-        this.state = []
+const authenticate = App => {
+class extends React.Component{
+    render(){
+       return <App />
+        }
     }
 }
+
+export default authenticate;
