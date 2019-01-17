@@ -25,9 +25,9 @@ class Login extends React.Component{
         return (
         <div className="loginPage">
             <div className="pageWrapper">
-                <div className="loginTitle">
+            <div className="loginTitle">
             <h2>Welcome to InstaCram!</h2>
-            <h4>Social Media for Students Who Actually Want to Study</h4>
+            <h4>Connect With Your Study Buddies</h4>
             </div>
             <form action="/action_page.php">
             <div className="loginSubtitle">

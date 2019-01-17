@@ -1,27 +1,7 @@
-.SearchBar{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border-bottom: 1px solid lightgray;
-    margin-top: 1%;
-}
-
-.logo{
-    display: flex;
-    align-items: center;
-    width: 30%;
-    margin-bottom: 2%;
-}
 
 .instagramLogo{
     width: 50%;
     height: auto;
-}
-
-.SearchInput{
-    margin-top: 1%;
-    font-size: 12px;
-    width: 30%;
 }
 
 input{
@@ -30,18 +10,6 @@ input{
     font-size: 10px;
 }
 
-.user-icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 30%;
-    margin-top: 1%;
-}
-
 i{
     font-size: 24px;
-}
-
-.fa-camera{
-    margin-right: 1%;
 }
