@@ -15,8 +15,10 @@ class Login extends React.Component{
     }
 
     onLogin = ev => {
-        localStorage.setItem('username', this.state.username);
+        const user = this.state.username
+        localStorage.setItem('user', user);
         localStorage.setItem('password', this.state.password);
+        window.location.reload(); // Refreshes page, which reruns App.js, which reruns authenticate.js
     }
 
     render(){

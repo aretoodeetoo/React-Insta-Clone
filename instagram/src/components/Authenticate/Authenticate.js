@@ -1,6 +1,5 @@
 import React from 'react';
-import App from '../../App';
-import Login from '/Users/Don/Git/React-Insta-Clone/instagram/src/components/Login/Login.js';
+import PostsPage from '../PostContainer/PostsPage';
 
 const authenticate = App => Login => 
 class extends React.Component{
@@ -12,16 +11,17 @@ class extends React.Component{
     }
 
     componentDidMount(){
-        localStorage.getItem('username');
-        localStorage.getItem('password');
+      if (!localStorage.getItem('user')){
+          this.setState({loggedIn: false });
+      } else {
+          this.setState({loggedIn: true});
+      }
     }    
 
     render(){
-        // if (!loggedIn)
-       return <App />
-       // else
-       return <Login />
-        }
+        if (this.state.loggedIn) return <PostsPage />;
+        return <Login />;
+    }
     }
 
 export default authenticate;
