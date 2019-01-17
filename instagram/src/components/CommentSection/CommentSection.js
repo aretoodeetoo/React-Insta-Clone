@@ -1,10 +1,16 @@
 import React from 'react';
-import './CommentSection.css';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import Comment from './Comment';
 import CommentInput from './CommentInput';
 
+// Styled Components
+
+const CommentIcons = styled.div`
+    margin-top: 2%;
+    margin-bottom: 1%;
+`
 
 class CommentSection extends React.Component{
     constructor(props){
@@ -45,30 +51,29 @@ class CommentSection extends React.Component{
     render(){
         return(
             <div>
-            <div>
-            <div className="commentIcons">
+            <CommentIcons>
             <i 
             onClick={this.increaseLikes}
             className="far fa-heart"></i>
             <i
             className="far fa-comment"></i>
-            </div> 
+            </CommentIcons> 
+            
             <div>
             {this.state.likes} likes
-        </div>
             </div>
-            <div className="commentSection">
+
             {this.state.comments.map((com, idx) => 
                 <Comment
                 key={idx}
                 comment={com} />
             )}
+
             <CommentInput
             handleChanges={this.handleChanges}
             addNewComment={this.addNewComment}
             comment={this.state.comment}
              />
-            </div>
             </div>
         );
     }

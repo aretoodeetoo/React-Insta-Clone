@@ -1,27 +1,8 @@
-.comments {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
+.fa-heart{
+    margin-right: 3%;
+    font-size: 24px;
 }
 
-form{
-    width: 100%;
-}
-
-.commentInput{
-    margin-top: 1%;
-}
-
-.commentForm{
-    width: 100%;
-}
-
-input{
-    width: 100%;
-    text-align: left;
-}
-
-.commentUsername{
-    font-weight: bold;
-    margin-right: .5%;
+.fa-comment{
+    font-size: 24px;
 }
