@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import instagramLogo from '/Users/Don/Git/React-Insta-Clone/instagram/src/components/SearchBar/instagramLogo.png';
 
+// Component Styles
 const SearchBarWrapperStyles = styled.div`
     display: flex;
     justify-content: center;
@@ -37,7 +38,7 @@ const SearchBar = props => {
     return (
         <SearchBarWrapperStyles>
         <LogoWrapper>
-        <i class="fab fa-instagram"></i>
+        <i className="fab fa-instagram"></i>
         <span>|</span>
         <img className="instagramLogo" src={instagramLogo} alt="instagram" />
         </LogoWrapper>
