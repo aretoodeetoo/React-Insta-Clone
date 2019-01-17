@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import instagramLogo from '/Users/Don/Git/React-Insta-Clone/instagram/src/components/SearchBar/instagramLogo.png';
 
 // Component Styles
+
+//Wraps whole search bar
 const SearchBarWrapperStyles = styled.div`
     display: flex;
     justify-content: center;
@@ -13,6 +15,7 @@ const SearchBarWrapperStyles = styled.div`
     margin-top: 1%;
 `
 
+//All logo elements
 const LogoWrapper = styled.div`
     display: flex;
     align-items: center;
@@ -20,10 +23,26 @@ const LogoWrapper = styled.div`
     margin-bottom: 2%;
 `
 
+const CameraIcon = styled.span`
+    color: black;
+`
+
+const InstagramLogoImage = styled.img`
+    width: 50%;
+    height: auto;
+`
+
+// Search Form and Input
 const SearchInputStyles = styled.div`
     margin-top: 1%;
     font-size: 12px;
     width: 30%;
+`
+const SearchBarInput = styled.input`
+    background-color: #FAFAFA;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
 `
 
 const UserIconStyles = styled.div`
@@ -38,13 +57,14 @@ const SearchBar = props => {
     return (
         <SearchBarWrapperStyles>
         <LogoWrapper>
-        <i className="fab fa-instagram"></i>
+            <CameraIcon>
+        <i className="fab fa-instagram"></i></CameraIcon>
         <span>|</span>
-        <img className="instagramLogo" src={instagramLogo} alt="instagram" />
+        <InstagramLogoImage src={instagramLogo} alt="instagram" />
         </LogoWrapper>
         <SearchInputStyles>
         <form onSubmit={props.filterNames}>
-        <input 
+        <SearchBarInput 
         className="commentForm"
         type="text"
         name="searchInput"

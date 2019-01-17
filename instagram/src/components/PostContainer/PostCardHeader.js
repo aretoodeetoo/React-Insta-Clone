@@ -9,7 +9,7 @@ const PostHeaderStyles = styled.div`
     flex-direction: row;
     flex-wrap: nowrap;
     margin-bottom: 2%;
-    margin-top: 3%;
+    margin-top: 5%;
 `
 
 const UsernameStyles = styled.div`

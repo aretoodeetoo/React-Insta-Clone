@@ -1,13 +1,6 @@
 
-.instagramLogo{
-    width: 50%;
-    height: auto;
-}
-
-input{
-    background-color: #FAFAFA;
-    text-align: center;
-    font-size: 10px;
+.fa-instagram{
+    color: black;
 }
 
 i{

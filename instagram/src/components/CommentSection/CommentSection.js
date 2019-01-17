@@ -18,7 +18,8 @@ class CommentSection extends React.Component{
         this.state = {
             comments: props.comments,
             comment: '',
-            likes: props.likes
+            likes: props.likes,
+            isLiked: false
         };
     }
 
@@ -41,12 +42,14 @@ class CommentSection extends React.Component{
       };
 
     increaseLikes = () => {
-        this.setState((prevState, props) => {
-            return {
-                likes: ++prevState.likes
-            }
-        })
-    }
+        this.state.isLiked ? this.setState(prevState => ({
+            likes: prevState.likes - 1,
+            isLiked: !prevState.isLiked
+        }) ) : this.setState(prevState => ({
+            likes: prevState.likes + 1,
+            isLiked: !prevState.isLiked
+        }))
+    };
 
     render(){
         return(
