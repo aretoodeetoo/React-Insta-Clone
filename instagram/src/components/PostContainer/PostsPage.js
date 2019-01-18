@@ -8,7 +8,7 @@ import PostContainer from '/Users/Don/Git/React-Insta-Clone/instagram/src/compon
 //Styled Components
 
 const SearchBarWrapperMainPage = styled.div`
-    border: 1px solid white;
+    border: .3px solid white;
 ` 
 
 const PostContainerWrapper = styled.div`
