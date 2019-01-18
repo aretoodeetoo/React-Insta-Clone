@@ -1,5 +1,4 @@
 import React from 'react';
-import './PostContainer.css';
 
 // Import PostCard components
 import PostCardHeader from '/Users/Don/Git/React-Insta-Clone/instagram/src/components/PostContainer/PostCardHeader.js';

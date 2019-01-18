@@ -1,5 +1,4 @@
 import React from 'react';
-import './PostContainer.css';
 import styled from 'styled-components'; 
 
 import PostCard from '/Users/Don/Git/React-Insta-Clone/instagram/src/components/PostContainer/PostCard.js';
@@ -9,6 +8,7 @@ import PostCard from '/Users/Don/Git/React-Insta-Clone/instagram/src/components/
 const PostContainerWrapper = styled.div`
   margin: 0 auto;
   width: 72%;
+  border: 1px solid white;
 `
 
 const PostContainer = props => {

@@ -1,5 +1,4 @@
 import React from 'react';
-import './PostContainer.css';
 import styled from 'styled-components';
 
 // Styled Components

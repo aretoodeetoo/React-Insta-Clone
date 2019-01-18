@@ -10,9 +10,13 @@ import instagramLogo from '/Users/Don/Git/React-Insta-Clone/instagram/src/compon
 const SearchBarWrapperStyles = styled.div`
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 63%;
+    max-width: 880px;
+    z-index: 5;
     border-bottom: 1px solid lightgray;
-    margin-top: 1%;
+    margin-bottom: 1%;
+    position: fixed;
+    background: white;
 `
 
 //All logo elements
@@ -21,6 +25,7 @@ const LogoWrapper = styled.div`
     align-items: center;
     width: 30%;
     margin-bottom: 2%;
+    margin-top: 1%;
 `
 
 const CameraIcon = styled.span`
@@ -34,7 +39,7 @@ const InstagramLogoImage = styled.img`
 
 // Search Form and Input
 const SearchInputStyles = styled.div`
-    margin-top: 1%;
+    margin-top: 2.5%;
     font-size: 12px;
     width: 30%;
 `
@@ -50,7 +55,7 @@ const UserIconStyles = styled.div`
     flex-direction: row;
     justify-content: space-evenly;
     width: 30%;
-    margin-top: 1%;
+    margin-top: 2.5%;
 `
 
 const SearchBar = props => {
